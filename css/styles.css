@@ -143,7 +143,6 @@ img {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -161,6 +160,18 @@ img {
 .hero-section {
   background: var(--heading-color);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-title {
@@ -286,12 +297,66 @@ img {
 }
 
 .centre-row-title {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
 
+/*Socials styles*/
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: #404bbf;
+}
+
+/*Customers section*/
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.clients-item {
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: #8e8f99;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: #404bbf;
+  color: var(--focus-hover-color);
+}
+
+.clients-icon {
+}
 /*Portfolio our projects*/
 
 .portfolio-section {
@@ -345,6 +410,12 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.flex-cards:hover,
+.flex-cards:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*Footer section*/
